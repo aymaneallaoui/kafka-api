@@ -21,9 +21,51 @@ type Response struct {
 }
 
 var quotes = []string{
-	"Quote 1 from Kafka.",
-	"Quote 2 from Kafka.",
-	"Quote 3 from Kafka.",
+	"Hi, Astral Expressers... Well, you caught me.",
+	"All space and time are practically infinite, and yet right here, right now, we find ourselves together. That's the nature of 'destiny' — it creates a miracle but convinces you of an accident.",
+	"Oh, bye-bye, (Trailblazer). See if you can surprise me next time.",
+	"Before I joined the Stellaron Hunters, the nature of my work meant that I barely ever saw the same person twice.",
+	"Elio said that I'm good at creating 'fear,' even though I don't know what it is.",
+	"Playing the violin and firing a gun both require flexible fingers, but bullets are more obedient.",
+	"I especially love velvet coats, they're so fragile and beautiful. Difficult to maintain — you only have to be a tiny bit careless to ruin the sheen.",
+	"The past and the future are so similar to each other. I'm indifferent towards them.",
+	"There's a planet I go to every summer to look at the sea. That's when the tides are fiercest — you have to stand far away on the shore. Then, one year, they constructed a long observation pier. I haven't been back since.",
+	"My home world is one of many planets changed by a Stellaron... *sigh* It's a shame I never got to witness how far it fell at the time.",
+	"I like chatting with Silver Wolf. She's got a lot of ideas for someone so small.",
+	"Bladie... He takes after his name — his fights are a pleasure to witness.",
+	"Oh, Sam isn't nearly as picky about his prey as I am... you might consider it a lucky break running into me.",
+	"No one can completely grasp another's thoughts... Not even you or I.",
+	"If destiny can't propel me forward, I'll be the one to push destiny.",
+	"It's tough to get going again once you've stopped, don't you think?",
+	"The path to the future begins right here.",
+	"(Trailblazer), we meet again.",
+	"Let's skip the formalities, Silver Wolf. I'm always game for putting on a show.",
+	"The hunt beckons, Bladie. Are you ready?",
+	"Oh, the Express Crew. Looks like we'll be joining forces quite often, huh?",
+	"Caught in the net.",
+	"Just in time.",
+	"May as well kill them all~",
+	"That breathing sensation? Remember it.",
+	"Time to move.",
+	"This won't take long.",
+	"Didn't hurt.",
+	"Not bad.",
+	"Good times never last.",
+	"Time to say bye. BOOM.",
+	"Relax.",
+	"Stand still.",
+	"This... isn't the end.",
+	"Oh! I'm still alive.",
+	"Thanks. You're too good to me.",
+	"Does that hurt?",
+	"The human body is beautiful in its fragility.",
+	"Hmm. We can use it.",
+	"No surprise there.",
+	"Like what you see? Me too.",
+	"Nice work.",
+	"Impressive. Want a prize?",
+	"Huh, they don't look happy to see us...",
+	"*sigh* Is that a stain? I like this coat.",
 }
 
 var imageFiles []string
@@ -53,7 +95,7 @@ func main() {
 
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "8080"
+		port = "14467"
 	}
 	server := &http.Server{
 		Addr:    ":" + port,
