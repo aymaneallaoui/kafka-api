@@ -161,7 +161,7 @@ func shuffle(n int, swap func(i, j int)) {
 
 func shufflePeriodically() {
 	for {
-		time.Sleep(1 * time.Hour)
+		time.Sleep(1 * time.Minute)
 		shuffleQuotes()
 		shuffleImages()
 	}
